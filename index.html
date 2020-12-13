@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>What curry are you?</title>
+    <title>What Chaakoo curry are you?</title>
     <link href="style.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -11,13 +11,14 @@
   </head>
   <body>
     <header>
+      <img src="chaakoo.png" class="headerImage">
       <h1>What curry are you?</h1>
-    </header>
-    <main>
       <h2>
         Ever wondered if you were born as a curry, what curry you would be? Well
         answer these questions and find out!
       </h2>
+    </header>
+    <main>
       <form METHOD=POST>
       <container>
         <h3>Beverage of choice</h3>
@@ -57,7 +58,9 @@
         <input type="radio"id="pokemon">Pokemon</input>
         <input type="radio" id="wow">World of Warcraft</input>
         <input type="radio" id="zelda">Zelda</input>
-      </container><br><br> 
+        </div>
+      </container>
+      <br><br>
       <button type="button" onclick="beverage(), days(), supermarkets(), games(), totals()"> 
         Submit</button> 
     </form>   
