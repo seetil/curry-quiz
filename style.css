@@ -1,5 +1,12 @@
 html {
   font-family: "Roboto Mono", monospace;
+  background: rgb(83, 180, 79);
+  background: linear-gradient(
+    90deg,
+    rgba(83, 180, 79, 1) 0%,
+    rgba(57, 112, 154, 1) 70%
+  );
+  color: wheat;
 }
 body {
   justify-content: space-evenly;
