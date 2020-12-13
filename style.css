@@ -1,0 +1,101 @@
+html {
+  font-family: "Roboto Mono", monospace;
+}
+body {
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+h1 {
+  margin: auto;
+  width: 75%;
+  padding: 13px;
+}
+h2 {
+  margin: auto;
+  width: 75%;
+  padding: 13px;
+  font-weight: 100;
+  font-size: medium;
+}
+
+.input {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  font-family: "Roboto Mono", monospace;
+}
+
+h3 {
+  text-align: center;
+  width: 90%;
+  font-family: "Roboto Mono", monospace;
+}
+.hidden {
+  display: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+.overlay {
+  display: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.justified-adjustment {
+  margin-left: 12%;
+}
+
+.korma {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://ukcdn.ar-cdn.com/recipes/originals/a8cef586-4ff4-4abf-a71d-8a0b877208c2.jpg");
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}
+.madras {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://i.ytimg.com/vi/W_AAKyVGwMs/maxresdefault.jpg");
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}
+
+.biryani {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://realfood.tesco.com/media/images/RFO-1400x919-lamb-biryani-eec32606-fd4d-4adf-9200-d8ba51c506de-0-1400x919.jpg");
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}
+.mappas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://www.yummyoyummy.com/wp-content/uploads/2014/11/Vegetable-methi-curry31.jpg");
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}
+
+.monkfish {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://static.toiimg.com/thumb/55224612.cms?width=1200&height=900");
+  background-size: cover;
+  background-position: center;
+  color: whitesmoke;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What curry are you?</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>What curry are you?</h1>
+    </header>
+    <main>
+      <h2>
+        Ever wondered if you were born as a curry, what curry you would be? Well
+        answer these questions and find out!
+      </h2>
+      <form METHOD=POST>
+      <container>
+        <h3>Beverage of choice</h3>
+        <div class="inputs justified-adjustment">
+        <input type="radio" id="kombucha">Kombucha</input>
+        <input type="radio" id="lager">Pint of Lager</input>
+        <input type="radio" id="oatmilk">Oatmilk Latte</input>
+        <input type="radio" id="ipa">Mango IPA</input>
+        <input type="radio" id= "coffee">Black Coffee</input>
+        </div>
+      </container>
+      <container>
+        <h3>Favourite day of the week</h3>
+        <div class="inputs justified-adjustment">
+          <input type="radio" id="tuesday">Tuesday</input>
+          <input type="radio" id="wednesday">Wednesday</input>
+          <input type="radio" id="friday">Friday</input>
+          <input type="radio" id="saturday">Saturday</input>
+          <input type="radio" id="sunday">Sunday</input>
+        </div>
+      </container>
+      <container>
+        <h3>Supermarket of choice</h3>
+        <div class="inputs justified-adjustment">
+        <input type="radio" id="aldi">Aldi</input>
+        <input type="radio" id="asda">Asda</input>
+        <input type="radio" id="sainsburys">Sainsburys</input>
+        <input type="radio" id="tesco">Tesco</input>
+        <input type="radio" id="waitrose">Waitrose</input>
+        </div>
+      </container>
+      <container>
+        <h3>Game of choice</h3>
+        <div class="inputs justified-adjustment">
+        <input type="radio" id="cod">Call of Duty</input>
+        <input type="radio" id="mario">Mariokart</input>
+        <input type="radio"id="pokemon">Pokemon</input>
+        <input type="radio" id="wow">World of Warcraft</input>
+        <input type="radio" id="zelda">Zelda</input>
+      </container><br><br> 
+      <button type="button" onclick="beverage(), days(), supermarkets(), games(), totals()"> 
+        Submit</button> 
+    </form>   
+      <div class="overlay hidden"></div>
+      <div class="modal korma hidden">
+          <h1>Chicken korma</h1>
+          <p>
+            You are a Chicken Korma. A little basic but an all round classic. A
+            people pleaser, friendly, sociable but never out your comfort zone.
+          </p>
+        </div>
+      </div> 
+     <div class="modal biryani hidden">
+          <h1>Lamb Biryani</h1>
+          <p>
+            You are a Lamb Biryani. A little rough around the edges but full of
+            dry humour. An underrated, dark horse.
+          </p>
+        </div>
+      </div>
+      <div class="modal mappas hidden">
+          <h1>Vegetable Mappas</h1>
+          <p>You are a Vegetable Mappas. Cool, hipster and totally up to date in todays health trends #veganlyf</p>
+        </div>
+      </div>
+      <div class="modal madras hidden">
+          <h1>Chicken Madras</h1>
+          <p>You are a Chicken Madras. Hot and spicy, you are sexy and you know it.</p>
+        </div>
+      </div>
+      <div class="modal monkfish hidden">
+          <h1>Kerala Monkfish</h1>
+          <p>You are a Kerala Monkfish. Funky and fun, you dont care what others think, life is meant to be lived!!</p>
+        </div> 
+      </div> 
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
