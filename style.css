@@ -13,7 +13,7 @@ header {
 }
 @media screen and (max-width: 600px) {
   .headerImage {
-    margin-left: 5%;
+    position: left;
   }
 }
 body {
