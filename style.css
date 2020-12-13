@@ -8,7 +8,13 @@ header {
   background-repeat: repeat;
   text-align: center;
 }
-
+@media (max-width: 480px) {
+  header {
+    background: url("https://github.com/seetil/images/blob/main/Screenshot%202020-12-13%20at%2023.53.32.png?raw=true");
+    body{
+      font-size:20px;
+  }
+}
 body {
   justify-content: space-evenly;
   align-items: flex-start;
