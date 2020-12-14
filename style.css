@@ -1,6 +1,5 @@
 html {
   font-family: "Roboto Mono", monospace;
-  color: rgb(129, 178, 211);
 }
 header {
   background: url("https://github.com/seetil/images/blob/main/background.png?raw=true");
@@ -8,9 +7,10 @@ header {
   background-repeat: repeat;
   text-align: center;
 }
+.headerImage {
+  padding: 0px;
+}
 body {
-  justify-content: space-evenly;
-  align-items: flex-start;
   background: url("https://github.com/seetil/images/blob/main/body.png?raw=true");
   background-repeat: repeat, repeat-y, repeat-x;
   color: rgb(16, 49, 16);
@@ -20,26 +20,69 @@ h1 {
   width: 75%;
   padding: 13px;
   text-align: center;
-  color: rgb(129, 178, 211);
+  color: rgb(164, 193, 212);
 }
 h2 {
   margin: auto;
   width: 75%;
   padding: 13px;
-  font-weight: 100;
-  color: rgb(129, 178, 211);
+  color: rgb(164, 193, 212);
 }
 h3 {
-  margin-left: 5%;
   text-align: center;
-  width: 90%;
-  font-family: "Roboto Mono", monospace;
 }
 
-.inputs {
-  display: flex;
+.switch-field {
   font-family: "Roboto Mono", monospace;
-  margin-left: 0%;
+  color: rgb(16, 49, 16);
+  list-style-type: none;
+  text-align: center;
+}
+.switch-field input {
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+}
+
+.switch-field label {
+  background-color: #f3f3e8;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  padding: 8px 16px;
+  margin-right: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.1s ease-in-out;
+  color: rgb(16, 49, 16);
+}
+
+.switch-field label:hover {
+  cursor: pointer;
+}
+
+.switch-field input:checked + label {
+  background-color: rgb(164, 193, 212);
+  box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+  border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
+.submit {
+  background-color: darkgreen;
+  font-size: 20px;
+  font-weight: 50;
+  color: rgb(164, 193, 212);
 }
 
 .hidden {
@@ -47,7 +90,7 @@ h3 {
 }
 .modal {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
@@ -70,23 +113,19 @@ h3 {
   z-index: 5;
 }
 
-.justified-adjustment {
-  margin-left: 12%;
-}
-
 .korma {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://ukcdn.ar-cdn.com/recipes/originals/a8cef586-4ff4-4abf-a71d-8a0b877208c2.jpg");
   background-size: cover;
   background-position: center;
-  color: whitesmoke;
+  color: rgb(164, 193, 212);
 }
 .madras {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://i.ytimg.com/vi/W_AAKyVGwMs/maxresdefault.jpg");
   background-size: cover;
   background-position: center;
-  color: whitesmoke;
+  color: rgb(164, 193, 212);
 }
 
 .biryani {
@@ -94,14 +133,14 @@ h3 {
     url("https://realfood.tesco.com/media/images/RFO-1400x919-lamb-biryani-eec32606-fd4d-4adf-9200-d8ba51c506de-0-1400x919.jpg");
   background-size: cover;
   background-position: center;
-  color: whitesmoke;
+  color: rgb(164, 193, 212);
 }
 .mappas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://www.yummyoyummy.com/wp-content/uploads/2014/11/Vegetable-methi-curry31.jpg");
   background-size: cover;
   background-position: center;
-  color: whitesmoke;
+  color: rgb(164, 193, 212);
 }
 
 .monkfish {
@@ -109,5 +148,5 @@ h3 {
     url("https://static.toiimg.com/thumb/55224612.cms?width=1200&height=900");
   background-size: cover;
   background-position: center;
-  color: whitesmoke;
+  color: rgb(164, 193, 212);
 }
