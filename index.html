@@ -14,53 +14,74 @@
       <img src="https://github.com/seetil/images/blob/main/Screenshot%202020-12-13%20at%2023.53.32.png?raw=true" class="headerImage">
       <h1>What curry are you?</h1>
       <h2>
-        Finally a quiz that will reveal what curry you are inside! Answer the questions below and hit submit for your results...
-      </h2>
+       Embrace your inner curry! Select your answers below to reveal what curry you are...
     </header>
     <main>
       <form METHOD=POST>
-      <container>
-        <h3>Beverage of choice</h3>
-        <div class="inputs justified-adjustment">
-        <input type="radio" id="kombucha">Kombucha</input>
-        <input type="radio" id="lager">Pint of Lager</input>
-        <input type="radio" id="oatmilk">Oatmilk Latte</input>
-        <input type="radio" id="ipa">Mango IPA</input>
-        <input type="radio" id= "coffee">Black Coffee</input>
-        </div>
-      </container>
+        <container>
+          <h3>Beverage of choice</h3>
+          <div class="switch-field inputs justified-adjustment">
+            <input type="radio" id="kombucha"/>
+            <label for="kombucha">Kombucha </label>
+            <input type="radio" id="lager"/>
+            <label for="lager">Pint of Lager </label>
+            <input type="radio" id="oatmilk"/>
+            <label for="oatmilk" >Oatmilk Latte </label>
+            <input type="radio" id="ipa"/>
+            <label for="ipa">Mango IPA </label>
+            <input type="radio" id="coffee"/>
+            <label for="coffee">Black Coffee </label>
+          </div>
+        </container>
       <container>
         <h3>Favourite day of the week</h3>
-        <div class="inputs justified-adjustment">
-          <input type="radio" id="tuesday">Tuesday</input>
-          <input type="radio" id="wednesday">Wednesday</input>
-          <input type="radio" id="friday">Friday</input>
-          <input type="radio" id="saturday">Saturday</input>
-          <input type="radio" id="sunday">Sunday</input>
+        <div class="switch-field inputs justified-adjustment">
+          <input type="radio" id="tuesday"/>
+          <label for="tuesday">Tuesday </label>
+          <input type="radio" id="wednesday"/>
+          <label for="wednesday">Wednesday </label>
+          <input type="radio" id="friday"/>
+          <label for="friday" >Friday </label>
+          <input type="radio" id="saturday"/>
+          <label for="saturday">Saturday
+          </label>
+          <input type="radio" id="sunday"/>
+          <label for="sunday">Sunday </label>
         </div>
       </container>
       <container>
         <h3>Supermarket of choice</h3>
-        <div class="inputs justified-adjustment">
-        <input type="radio" id="aldi">Aldi</input>
-        <input type="radio" id="asda">Asda</input>
-        <input type="radio" id="sainsburys">Sainsburys</input>
-        <input type="radio" id="tesco">Tesco</input>
-        <input type="radio" id="waitrose">Waitrose</input>
+        <div class="switch-field inputs justified-adjustment">
+          <input type="radio" id="aldi"/>
+          <label for="aldi">Aldi </label>
+          <input type="radio" id="asda"/>
+          <label for="asda">Asda </label>
+          <input type="radio" id="sainsburys"/>
+          <label for="sainsburys" >Sainsburys </label>
+          <input type="radio" id="tesco"/>
+          <label for="tesco">Tesco
+          </label>
+          <input type="radio" id="waitrose"/>
+          <label for="waitrose">Waitrose </label>
         </div>
       </container>
       <container>
         <h3>Game of choice</h3>
-        <div class="inputs justified-adjustment">
-        <input type="radio" id="cod">Call of Duty</input>
-        <input type="radio" id="mario">Mariokart</input>
-        <input type="radio"id="pokemon">Pokemon</input>
-        <input type="radio" id="wow">World of Warcraft</input>
-        <input type="radio" id="zelda">Zelda</input>
+        <div class="switch-field inputs justified-adjustment">
+          <input type="radio" id="cod"/>
+          <label for="cod">Call of Duty </label>
+          <input type="radio" id="mario"/>
+          <label for="mario">Mariokart </label>
+          <input type="radio" id="pokemon"/>
+          <label for="pokemon" >Pokemon </label>
+          <input type="radio" id="wow"/>
+          <label for="wow">World of Warcraft
+          </label>
+          <input type="radio" id="zelda"/>
+          <label for="zelda">Zelda </label>
         </div>
       </container>
-      <br><br>
-      <button type="button" onclick="beverage(), days(), supermarkets(), games(), totals()"> 
+      <button type="button" class= "submit" onclick="beverage(), days(), supermarkets(), games(), totals()"> 
         Submit</button> 
     </form>   
       <div class="overlay hidden"></div>
