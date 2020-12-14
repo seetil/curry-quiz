@@ -11,8 +11,6 @@ header {
 @media (max-width: 480px) {
   header {
     background: url("https://github.com/seetil/images/blob/main/Screenshot%202020-12-13%20at%2023.53.32.png?raw=true");
-    body{
-      font-size:50px;
   }
 }
 body {
@@ -28,17 +26,19 @@ h1 {
   padding: 13px;
   text-align: center;
   color: rgb(129, 178, 211);
+  font-size: 50px;
 }
 h2 {
   margin: auto;
   width: 75%;
   padding: 13px;
   font-weight: 100;
-  font-size: medium;
+  font-size: 40px;;
   color: rgb(129, 178, 211);
 }
 h3 {
   margin-left: 5%;
+  font-size:30px;
 }
 
 .inputs {
