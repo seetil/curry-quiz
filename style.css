@@ -12,11 +12,7 @@ header {
   header {
     background: url("https://github.com/seetil/images/blob/main/Screenshot%202020-12-13%20at%2023.53.32.png?raw=true");
   }
-  h2{
-    font-size:30px;
-    padding:auto;
-    width:auto;
-}
+
 body {
   justify-content: space-evenly;
   align-items: flex-start;
