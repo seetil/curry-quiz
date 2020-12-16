@@ -20,7 +20,7 @@
       <form METHOD=POST>
         <container>
           <h3>Beverage of choice</h3>
-          <div class="switch-field inputs justified-adjustment">
+          <div class="switch-field inputs">
             <input type="radio" id="kombucha"/>
             <label for="kombucha">Kombucha </label>
             <input type="radio" id="lager"/>
@@ -35,7 +35,7 @@
         </container>
       <container>
         <h3>Favourite day of the week</h3>
-        <div class="switch-field inputs justified-adjustment">
+        <div class="switch-field inputs">
           <input type="radio" id="tuesday"/>
           <label for="tuesday">Tuesday </label>
           <input type="radio" id="wednesday"/>
@@ -51,7 +51,7 @@
       </container>
       <container>
         <h3>Supermarket of choice</h3>
-        <div class="switch-field inputs justified-adjustment">
+        <div class="switch-field inputs">
           <input type="radio" id="aldi"/>
           <label for="aldi">Aldi </label>
           <input type="radio" id="asda"/>
@@ -67,7 +67,7 @@
       </container>
       <container>
         <h3>Game of choice</h3>
-        <div class="switch-field inputs justified-adjustment">
+        <div class="switch-field inputs">
           <input type="radio" id="cod"/>
           <label for="cod">Call of Duty </label>
           <input type="radio" id="mario"/>
@@ -81,7 +81,71 @@
           <label for="zelda">Zelda </label>
         </div>
       </container>
-      <button type="button" class= "submit" onclick="beverage(), days(), supermarkets(), games(), totals()"> 
+      <container>
+        <h3>Favourite Holiday</h3>
+        <div class="switch-field inputs">
+          <input type="radio" id="halloween"/>
+          <label for="halloween">Halloween </label>
+          <input type="radio" id="christmas"/>
+          <label for="christmas">Christmas </label>
+          <input type="radio" id="newyears"/>
+          <label for="newyears" >New Years </label>
+          <input type="radio" id="easter"/>
+          <label for="easter">Easter
+          </label>
+          <input type="radio" id="bonfire"/>
+          <label for="bonfire">Bonfire Night </label>
+        </div>
+      </container>
+      <container>
+        <h3>Film Series</h3>
+        <div class="switch-field inputs">
+          <input type="radio" id="avengers"/>
+          <label for="avengers">Avengers </label>
+          <input type="radio" id="harrypotter"/>
+          <label for="harrypotter">Harry Potter </label>
+          <input type="radio" id="lotr"/>
+          <label for="lotr" >Lord of the Rings </label>
+          <input type="radio" id="starwars"/>
+          <label for="starwars">Star Wars
+          </label>
+          <input type="radio" id="xmen"/>
+          <label for="xmen">X-Men </label>
+        </div>
+      </container>
+      <container>
+        <h3>TV Series</h3>
+        <div class="switch-field inputs">
+          <input type="radio" id="archer"/>
+          <label for="archer">Archer </label>
+          <input type="radio" id="asip"/>
+          <label for="asip">Always Sunny in Philadelphia </label>
+          <input type="radio" id="community"/>
+          <label for="community" >Community </label>
+          <input type="radio" id="friends"/>
+          <label for="friends">Friends
+          </label>
+          <input type="radio" id="greys"/>
+          <label for="greys">Greys Anatomy </label>
+        </div>
+      </container>
+      <container>
+        <h3>Brunch meal of choice</h3>
+        <div class="switch-field inputs">
+          <input type="radio" id="avo"/>
+          <label for="avo">Avocado Toast </label>
+          <input type="radio" id="fullbfast"/>
+          <label for="fullbfast">Full Breakfast </label>
+          <input type="radio" id="benny"/>
+          <label for="benny" >Eggs Benedict </label>
+          <input type="radio" id="granola"/>
+          <label for="granola">Granola
+          </label>
+          <input type="radio" id="skillet"/>
+          <label for="skillet">Baked Eggs Skillet </label>
+        </div>
+      </container>
+      <button type="button" class= "submit" onclick="beverage(), days(), supermarkets(), games(), holidays(), films(), series(), brunch(), totals()"> 
         Submit</button> 
     </form>   
       <div class="overlay hidden"></div>
