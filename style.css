@@ -4,7 +4,7 @@ html {
   padding: 0;
 }
 header {
-  background: url("https://github.com/seetil/images/blob/main/background.png?raw=true");
+  background: url("https://raw.githubusercontent.com/seetil/curry-quiz/main/background.png");
   background-position: center;
   background-repeat: repeat;
   text-align: center;
@@ -14,7 +14,7 @@ header {
   padding: 0px;
 }
 body {
-  background: url("https://github.com/seetil/images/blob/main/body.png?raw=true");
+  background: url("https://raw.githubusercontent.com/seetil/curry-quiz/main/body.png");
   background-repeat: repeat, repeat-y, repeat-x;
   color: rgb(16, 49, 16);
 }
