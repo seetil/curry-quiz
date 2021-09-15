@@ -1,11 +1,14 @@
 html {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 header {
   background: url("https://github.com/seetil/images/blob/main/background.png?raw=true");
   background-position: center;
   background-repeat: repeat;
   text-align: center;
+  top: 1;
 }
 .headerImage {
   padding: 0px;
@@ -32,8 +35,8 @@ h3 {
   text-align: center;
 }
 
+
 .switch-field {
-  font-family: "Roboto Mono", monospace;
   color: rgb(16, 49, 16);
   list-style-type: none;
   text-align: center;
@@ -83,6 +86,8 @@ h3 {
   font-size: 20px;
   font-weight: 50;
   color: rgb(164, 193, 212);
+  font-family: 'Nunito', sans-serif;
+  
 }
 
 .hidden {
@@ -149,4 +154,21 @@ h3 {
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
+}
+
+
+/*.button {
+  width: 10px;
+}
+*/
+.inputs{
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+label{
+  height: 2.5rem;
+  width: 6rem;
+  text-align: center;
 }
