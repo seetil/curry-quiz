@@ -90,14 +90,14 @@ h3 {
 
 .korma {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://github.com/seetil/curry-quiz/blob/main/ChickenKorma.jpg");
+    url("https://github.com/seetil/curry-quiz/blob/main/ChickenKorma.jpg?raw=true");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
 }
 .madras {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://raw.githubusercontent.com/seetil/curry-quiz/maxresdefault.jpg");
+    url("https://github.com/seetil/curry-quiz/blob/main/maxresdefault.jpg?raw=true");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
@@ -105,14 +105,14 @@ h3 {
 
 .biryani {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://raw.githubusercontent.com/seetil/curry-quiz/lambBiryani.jpg");
+    url("https://github.com/seetil/curry-quiz/blob/main/lambBiryani.jpg?raw=true");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
 }
 .mappas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://raw.githubusercontent.com/seetil/curry-quiz/vegmappas.jpg");
+    url("https://github.com/seetil/curry-quiz/blob/main/vegmappas.jpg?raw=true");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
@@ -120,7 +120,7 @@ h3 {
 
 .monkfish {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://raw.githubusercontent.com/seetil/curry-quiz/monkfish.jpg");
+    url("https://github.com/seetil/curry-quiz/blob/main/monkfish.jpg?raw=true");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);

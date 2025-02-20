@@ -97,6 +97,5 @@ function result(total) {
 }
 
 function exit() {
-  document.querySelector(".overlay").classList.add("hidden");
-  document.querySelector(".modal").classList.add("hidden");
+  location.reload();
 }
