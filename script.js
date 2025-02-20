@@ -2,165 +2,101 @@
 function hideOverlay() {
   document.querySelector(".overlay").classList.remove("hidden");
 }
-let c = 0;
-let myArray = [];
-function beverage() {
-  if (document.getElementById("kombucha").checked) {
-    myArray.push("mappas");
-  } else if (document.getElementById("lager").checked) {
-    myArray.push("madras");
-  } else if (document.getElementById("oatmilk").checked) {
-    myArray.push("korma");
-  } else if (document.getElementById("ipa").checked) {
-    myArray.push("monkfish");
-  } else if (document.getElementById("coffee").checked) {
-    myArray.push("biryani");
-  } else {
-    console.log("beverage not chosen");
-  }
-}
-function days() {
-  if (document.getElementById("tuesday").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("wednesday").checked) {
-    myArray.push("monkfish");
-  } else if (document.getElementById("friday").checked) {
-    myArray.push("korma");
-  } else if (document.getElementById("saturday").checked) {
-    myArray.push("mappas");
-  } else if (document.getElementById("sunday").checked) {
-    myArray.push("madras");
-  } else {
-    console.log("day not chosen");
-  }
-}
 
-function supermarkets() {
-  if (document.getElementById("aldi").checked) {
-    myArray.push("monkfish");
-  } else if (document.getElementById("asda").checked) {
-    myArray.push("madras");
-  } else if (document.getElementById("sainsburys").checked) {
-    myArray.push("korma");
-  } else if (document.getElementById("tesco").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("waitrose").checked) {
-    myArray.push("mappas");
-  } else {
-    console.log("supermarket not chosen");
-  }
-}
+document.addEventListener("DOMContentLoaded", function () {
+  const rows = document.querySelectorAll(".inputs");
+  const submitButton = document.getElementById("submitButton");
 
-function games() {
-  if (document.getElementById("cod").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("mario").checked) {
-    myArray.push("korma");
-  } else if (document.getElementById("pokemon").checked) {
-    myArray.push("monkfish");
-  } else if (document.getElementById("wow").checked) {
-    myArray.push("madras");
-  } else if (document.getElementById("zelda").checked) {
-    myArray.push("mappas");
-  } else {
-    console.log("game not chosen");
-  }
-}
+  let selectedButtons = [];
+  function handleButtonSelection(rowIndex, button) {
+    // Deselect the previously selected button in the same row
+    if (selectedButtons[rowIndex]) {
+      selectedButtons[rowIndex].classList.remove("selected");
+    }
 
-function holidays() {
-  if (document.getElementById("halloween").checked) {
-    myArray.push("monkfish");
-  } else if (document.getElementById("christmas").checked) {
-    myArray.push("korma");
-  } else if (document.getElementById("newyears").checked) {
-    myArray.push("madras");
-  } else if (document.getElementById("easter").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("bonfire").checked) {
-    myArray.push("madras");
-  } else {
-    console.log("game not chosen");
+    // Select the clicked button
+    button.classList.add("selected");
+    selectedButtons[rowIndex] = button;
   }
-}
 
-function films() {
-  if (document.getElementById("xmen").checked) {
-    myArray.push("mappas");
-  } else if (document.getElementById("lotr").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("harrypotter").checked) {
-    myArray.push("korma");
-  } else if (document.getElementById("starwars").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("avengers").checked) {
-    myArray.push("madras");
-  } else {
-    console.log("films not chosen");
+  // Reusable function to add click event listeners to buttons in a row
+  function addButtonListeners(row, rowIndex) {
+    const buttons = row.querySelectorAll(".button-choice");
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        handleButtonSelection(rowIndex, this); // Call the handler with the row index and clicked button
+      });
+    });
   }
-}
 
-function series() {
-  if (document.getElementById("greys").checked) {
-    myArray.push("mappas");
-  } else if (document.getElementById("asip").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("friends").checked) {
-    myArray.push("korma");
-  } else if (document.getElementById("community").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("archer").checked) {
-    myArray.push("madras");
-  } else {
-    console.log("series not chosen");
-  }
-}
-function brunch() {
-  if (document.getElementById("granola").checked) {
-    myArray.push("mappas");
-  } else if (document.getElementById("fullbfast").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("avo").checked) {
-    myArray.push("korma");
-  } else if (document.getElementById("benny").checked) {
-    myArray.push("biryani");
-  } else if (document.getElementById("skillet").checked) {
-    myArray.push("madras");
-  } else {
-    console.log("brunch not chosen");
-  }
-}
+  // Add click event listeners to buttons in each row
+  rows.forEach((row, index) => {
+    addButtonListeners(row, index); // Pass the row and its index
+  });
 
-const mode = (a) =>
-  Object.values(
-    a.reduce((count, e) => {
-      if (!(e in count)) {
-        count[e] = [0, e];
+  // Add click event listener to the submit button
+  submitButton.addEventListener("click", function () {
+    // Check if a button is selected in each row
+    let allRowsSelected = true;
+    for (let i = 0; i < rows.length; i++) {
+      if (!selectedButtons[i]) {
+        allRowsSelected = false;
+        break;
       }
+    }
 
-      count[e][0]++;
-      return count;
-    }, {})
-  ).reduce((a, v) => (v[0] < a[0] ? a : v), [0, null])[1];
-function totals() {
-  if (mode(myArray) == "korma") {
+    if (allRowsSelected) {
+      let total = 0;
+      // Print the value of each row's selected button
+      for (let i = 0; i < rows.length; i++) {
+        let number = selectedButtons[i].value;
+        console.log(`Row ${i + 1} Selected Button: ${number}`);
+        total += +number;
+      }
+      //call function to reveal the answer modal
+      result(total);
+      window.scrollTo({
+        top: 0, // Scroll to the top of the page
+        behavior: "smooth", // Optional: Add smooth scrolling
+      });
+    } else {
+      // Alert the user if not all rows have a selected button
+      alert("Please select one button from each row before submitting.");
+    }
+  });
+});
+
+function result(total) {
+  console.log(total);
+  if (total > 0 && total < 9) {
     document.querySelector(".korma").classList.remove("hidden");
+    document.querySelector(".korma").classList.add("current");
     hideOverlay();
-    console.log(myArray);
-  } else if (mode(myArray) == "biryani") {
+    console.log(total);
+  } else if (total > 8 && total < 17) {
     document.querySelector(".biryani").classList.remove("hidden");
+    document.querySelector(".biryani").classList.add("current");
     hideOverlay();
-    console.log(myArray);
-  } else if (mode(myArray) == "mappas") {
+    console.log(total);
+  } else if (total > 16 && total < 25) {
     document.querySelector(".mappas").classList.remove("hidden");
+    document.querySelector(".mappas").classList.add("current");
     hideOverlay();
-    console.log(myArray);
-  } else if (mode(myArray) == "madras") {
+    console.log(total);
+  } else if (total > 24 && total < 33) {
     document.querySelector(".madras").classList.remove("hidden");
+    document.querySelector(".madras").classList.add("current");
     hideOverlay();
-    console.log(myArray);
-  } else if (mode(myArray) == "monkfish") {
+    console.log(total);
+  } else if (total > 32 && total < 41) {
     document.querySelector(".monkfish").classList.remove("hidden");
+    document.querySelector(".monkfish").classList.add("current");
     hideOverlay();
-    console.log(myArray);
+    console.log(total);
   }
+}
+
+function exit() {
+  document.querySelector(".overlay").classList.add("hidden");
+  document.querySelector(".modal").classList.add("hidden");
 }

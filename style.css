@@ -1,5 +1,5 @@
 html {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -7,78 +7,50 @@ header {
   background: url("https://raw.githubusercontent.com/seetil/curry-quiz/main/background.png");
   background-position: center;
   background-repeat: repeat;
-  text-align: center;
-  top: 1;
+  color: rgb(164, 193, 212);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.headerImage {
-  padding: 0px;
-}
+
 body {
-  background: url("https://raw.githubusercontent.com/seetil/curry-quiz/main/body.png");
-  background-repeat: repeat, repeat-y, repeat-x;
-  color: rgb(16, 49, 16);
+  background-image: url("https://raw.githubusercontent.com/seetil/curry-quiz/main/body.png");
 }
-h1 {
-  margin: auto;
-  width: 75%;
-  padding: 13px;
-  text-align: center;
-  color: rgb(164, 193, 212);
-}
-h2 {
-  margin: auto;
-  width: 75%;
-  padding: 13px;
-  color: rgb(164, 193, 212);
-}
+
 h3 {
   text-align: center;
 }
 
-
-.switch-field {
-  color: rgb(16, 49, 16);
-  list-style-type: none;
-  text-align: center;
+.form {
+  width: fit-content;
+  justify-self: center;
 }
-.switch-field input {
-  position: absolute !important;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  width: 1px;
-  border: 0;
-  overflow: hidden;
+.card {
+  border: 0.1rem solid rgb(36, 36, 36);
+  padding: 1rem;
+  width: 100%;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.switch-field label {
-  background-color: #f3f3e8;
+.inputs button {
+  font-weight: bold;
   color: rgba(0, 0, 0, 0.6);
-  font-size: 14px;
-  line-height: 1;
-  text-align: center;
-  padding: 8px 16px;
-  margin-right: -1px;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-  transition: all 0.1s ease-in-out;
   color: rgb(16, 49, 16);
 }
 
-.switch-field label:hover {
-  cursor: pointer;
-}
-
-.switch-field input:checked + label {
+.selected {
   background-color: rgb(164, 193, 212);
-  box-shadow: none;
 }
 
-.switch-field label:first-of-type {
-  border-radius: 4px 0 0 4px;
-}
-
-.switch-field label:last-of-type {
-  border-radius: 0 4px 4px 0;
+.exit {
+  background: none;
+  float: right;
+  color: white;
 }
 
 .submit {
@@ -86,8 +58,7 @@ h3 {
   font-size: 20px;
   font-weight: 50;
   color: rgb(164, 193, 212);
-  font-family: 'Nunito', sans-serif;
-  
+  font-family: "Nunito", sans-serif;
 }
 
 .hidden {
@@ -95,11 +66,10 @@ h3 {
 }
 .modal {
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
-
   background-color: white;
   padding: 6rem;
   border-radius: 5px;
@@ -120,14 +90,14 @@ h3 {
 
 .korma {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://ukcdn.ar-cdn.com/recipes/originals/a8cef586-4ff4-4abf-a71d-8a0b877208c2.jpg");
+    url("https://github.com/seetil/curry-quiz/blob/main/ChickenKorma.jpg");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
 }
 .madras {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://i.ytimg.com/vi/W_AAKyVGwMs/maxresdefault.jpg");
+    url("https://raw.githubusercontent.com/seetil/curry-quiz/maxresdefault.jpg");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
@@ -135,14 +105,14 @@ h3 {
 
 .biryani {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://realfood.tesco.com/media/images/RFO-1400x919-lamb-biryani-eec32606-fd4d-4adf-9200-d8ba51c506de-0-1400x919.jpg");
+    url("https://raw.githubusercontent.com/seetil/curry-quiz/lambBiryani.jpg");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
 }
 .mappas {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://www.yummyoyummy.com/wp-content/uploads/2014/11/Vegetable-methi-curry31.jpg");
+    url("https://raw.githubusercontent.com/seetil/curry-quiz/vegmappas.jpg");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
@@ -150,24 +120,19 @@ h3 {
 
 .monkfish {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://static.toiimg.com/thumb/55224612.cms?width=1200&height=900");
+    url("https://raw.githubusercontent.com/seetil/curry-quiz/monkfish.jpg");
   background-size: cover;
   background-position: center;
   color: rgb(164, 193, 212);
 }
 
-
-/*.button {
-  width: 10px;
-}
-*/
-.inputs{
+.inputs {
   display: flex;
   justify-content: center;
   column-gap: 1rem;
 }
 
-label{
+label {
   height: 2.5rem;
   width: 6rem;
   text-align: center;

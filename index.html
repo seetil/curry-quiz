@@ -9,146 +9,100 @@
   </head>
   <body>
     <header>
-      <!-- <img src="https://github.com/seetil/images/blob/main/Screenshot%202020-12-13%20at%2023.53.32.png?raw=true" class="headerImage"> -->
       <h1>What curry are you?</h1>
       <h2>
        Embrace your inner curry! Select your answers below to reveal what curry you are...
     </header>
     <main>
-      <form METHOD=POST>
-        <container>
-          <h3>Beverage of choice</h3>
-          <div class="switch-field inputs">
-            <input type="radio" id="kombucha"/>
-            <label for="kombucha">Kombucha </label>
-            <input type="radio" id="lager"/>
-            <label for="lager">Pint of Lager </label>
-            <input type="radio" id="oatmilk"/>
-            <label for="oatmilk" >Oatmilk Latte </label>
-            <input type="radio" id="ipa"/>
-            <label for="ipa">Mango IPA </label>
-            <input type="radio" id="coffee"/>
-            <label for="coffee">Black Coffee </label>
-          </div>
-        </container>
-      <container>
-        <h3>Favourite day of the week</h3>
-        <div class="switch-field inputs">
-          <input type="radio" id="tuesday"/>
-          <label for="tuesday">Tuesday </label>
-          <input type="radio" id="wednesday"/>
-          <label for="wednesday">Wednesday </label>
-          <input type="radio" id="friday"/>
-          <label for="friday" >Friday </label>
-          <input type="radio" id="saturday"/>
-          <label for="saturday">Saturday
-          </label>
-          <input type="radio" id="sunday"/>
-          <label for="sunday">Sunday </label>
-        </div>
-      </container>
-      <container>
-        <h3>Supermarket of choice</h3>
-        <div class="switch-field inputs">
-          <input type="radio" id="aldi"/>
-          <label for="aldi">Aldi </label>
-          <input type="radio" id="asda"/>
-          <label for="asda">Asda </label>
-          <input type="radio" id="sainsburys"/>
-          <label for="sainsburys" >Sainsburys </label>
-          <input type="radio" id="tesco"/>
-          <label for="tesco">Tesco
-          </label>
-          <input type="radio" id="waitrose"/>
-          <label for="waitrose">Waitrose </label>
-        </div>
-      </container>
-      <container>
-        <h3>Game of choice</h3>
-        <div class="switch-field inputs">
-          <input type="radio" id="cod"/>
-          <label for="cod">Call of Duty </label>
-          <input type="radio" id="mario"/>
-          <label for="mario">Mariokart </label>
-          <input type="radio" id="pokemon"/>
-          <label for="pokemon" >Pokemon </label>
-          <input type="radio" id="wow"/>
-          <label for="wow">World of Warcraft
-          </label>
-          <input type="radio" id="zelda"/>
-          <label for="zelda">Zelda </label>
-        </div>
-      </container>
-      <container>
-        <h3>Favourite Holiday</h3>
-        <div class="switch-field inputs">
-          <input type="radio" id="halloween"/>
-          <label for="halloween">Halloween </label>
-          <input type="radio" id="christmas"/>
-          <label for="christmas">Christmas </label>
-          <input type="radio" id="newyears"/>
-          <label for="newyears" >New Years </label>
-          <input type="radio" id="easter"/>
-          <label for="easter">Easter
-          </label>
-          <input type="radio" id="bonfire"/>
-          <label for="bonfire">Bonfire Night </label>
-        </div>
-      </container>
-      <container>
-        <h3>Film Series</h3>
-        <div class="switch-field inputs">
-          <input type="radio" id="avengers"/>
-          <label for="avengers">Avengers </label>
-          <input type="radio" id="harrypotter"/>
-          <label for="harrypotter">Harry Potter </label>
-          <input type="radio" id="lotr"/>
-          <label for="lotr" >Lord of the Rings </label>
-          <input type="radio" id="starwars"/>
-          <label for="starwars">Star Wars
-          </label>
-          <input type="radio" id="xmen"/>
-          <label for="xmen">X-Men </label>
-        </div>
-      </container>
-      <container>
-        <h3>TV Series</h3>
-        <div class="switch-field inputs">
-          <input type="radio" id="archer"/>
-          <label for="archer">Archer </label>
-          <input type="radio" id="asip"/>
-          <label for="asip">Always Sunny in Philadelphia </label>
-          <input type="radio" id="community"/>
-          <label for="community" >Community </label>
-          <input type="radio" id="friends"/>
-          <label for="friends">Friends
-          </label>
-          <input type="radio" id="greys"/>
-          <label for="greys">Greys Anatomy </label>
-        </div>
-      </container>
-      <container>
-        <h3>Brunch meal of choice</h3>
-        <div class="switch-field inputs">
-          <input type="radio" id="avo"/>
-          <label for="avo">Avocado Toast </label>
-          <input type="radio" id="fullbfast"/>
-          <label for="fullbfast">Full Breakfast </label>
-          <input type="radio" id="benny"/>
-          <label for="benny" >Eggs Benedict </label>
-          <input type="radio" id="granola"/>
-          <label for="granola">Granola
-          </label>
-          <input type="radio" id="skillet"/>
-          <label for="skillet">Baked Eggs Skillet </label>
-        </div>
-      </container>
-      <br>
-      <button type="button" class= "submit" onclick="beverage(), days(), supermarkets(), games(), holidays(), films(), series(), brunch(), totals()"> 
+      <div class="form">
+        <div>
+          <container class="card">
+            <h3>Beverage of choice</h3>
+            <div class="inputs">
+              <button class="button-choice" value=1>Kombucha</button>
+              <button class="button-choice" value=2>Pint of Lager</button>
+              <button class="button-choice" value=3>Oatmilk Latte</button>
+              <button class="button-choice" value=4>Mango IPA</button>
+              <button class="button-choice"value=5>Black Coffee </button>
+            </div>
+          </container>
+          <container class="card">
+            <h3>Favourite day of the week</h3>
+            <div class="inputs">
+              <button class="button-choice" value=5>Tuesday</button>
+              <button class="button-choice" value=4>Wednesday</button>
+              <button class="button-choice" value=3>Friday</button>
+              <button class="button-choice" value=2>Saturday</button>
+              <button class="button-choice" value=1>Sunday</button>
+            </div>
+          </container>
+          <container class="card">
+            <h3>Supermarket of choice</h3>
+            <div class="inputs">
+              <button class="button-choice" value=4>Lidl</button>
+              <button class="button-choice" value=2>Asda</button>
+              <button class="button-choice" value=3>Sainsburys</button>
+              <button class="button-choice" value=5>Tesco</button>
+              <button class="button-choice" value=1>Waitrose</button>
+            </div>
+          </container>
+          <container class="card">
+            <h3>Game of choice</h3>
+            <div class="inputs">
+              <button class="button-choice" value=5>DnD</button>
+              <button class="button-choice" value=3>Mariokart</button>
+              <button class="button-choice" value=4>Pokemon</button>
+              <button class="button-choice" value=2>Last of Us</button>
+              <button class="button-choice" value=1>Hogwarts Legacy</button>
+            </div>
+          </container>
+          <container class="card">
+            <h3>Favourite Holiday</h3>
+            <div class="inputs">
+              <button class="button-choice" value=4>Halloween</button>
+              <button class="button-choice" value=3>Christmas</button>
+              <button class="button-choice" value=5>New Years</button>
+              <button class="button-choice" value=1>Easter</button>
+              <button class="button-choice" value=2>Bonfire Night</button>
+            </div>
+          </container>
+          <container class="card">
+            <h3>Film Series</h3>
+            <div class="inputs">
+              <button class="button-choice" value=4>Avengers</button>
+              <button class="button-choice" value=2>Harry Potter</button>
+              <button class="button-choice" value=3>Lord of the Rings</button>
+              <button class="button-choice" value=1>Star Wars</button>
+              <button class="button-choice" value=5>X-Men</button>
+            </div>
+            </container>
+            <container class="card">
+              <h3>TV Series</h3>
+              <div class="inputs">
+                <button class="button-choice" value=1>Buffy the Vampire Slayer</button>
+                <button class="button-choice" value=5>The Office</button>
+                <button class="button-choice" value=3>Gilmore Girls</button>
+                <button class="button-choice" value=4>Avatar: The Last Airbender</button>
+                <button class="button-choice" value=2>Game of Thrones</button>
+              </div>
+            </container>
+            <container class="card">
+              <h3>Brunch meal of choice</h3>
+              <div class="inputs">
+                <button class="button-choice" value=1>Avocado Toast</button>
+                <button class="button-choice" value=5>Full Breakfast</button>
+                <button class="button-choice" value=3>Eggs Benedict</button>
+                <button class="button-choice" value=4>Granola</button>
+                <button class="button-choice" value=2>Baked Eggs Skillet</button>
+              </div>
+            </container>
+    </div>
+      <button id="submitButton" > 
         Submit</button> 
-    </form>   
+      </div>
       <div class="overlay hidden"></div>
       <div class="modal korma hidden">
+        <button class="exit" onclick="exit()">X</button>
           <h1>Chicken korma</h1>
           <p>
             You are a Chicken Korma. A little basic but an all round classic. A
@@ -157,6 +111,7 @@
         </div>
       </div> 
      <div class="modal biryani hidden">
+      <button class="exit" onclick="exit()">X</button>
           <h1>Lamb Biryani</h1>
           <p>
             You are a Lamb Biryani. A little rough around the edges but full of
@@ -165,16 +120,19 @@
         </div>
       </div>
       <div class="modal mappas hidden">
+        <button class="exit" onclick="exit()">X</button>
           <h1>Vegetable Mappas</h1>
           <p>You are a Vegetable Mappas. Cool, hipster and totally up to date in todays health trends #veganlyf</p>
         </div>
       </div>
       <div class="modal madras hidden">
+        <button class="exit" onclick="exit()">X</button>
           <h1>Chicken Madras</h1>
           <p>You are a Chicken Madras. Hot and spicy, you are sexy and you know it.</p>
         </div>
       </div>
       <div class="modal monkfish hidden">
+        <button class="exit" onclick="exit()">X</button>
           <h1>Kerala Monkfish</h1>
           <p>You are a Kerala Monkfish. Funky and fun, you dont care what others think, life is meant to be lived!!</p>
         </div> 
